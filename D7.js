@@ -194,7 +194,14 @@ const movies = [
 /* ESERCIZIO 10
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
-
+const FilteringMovies = (MoviesArray) => {
+  const filteredMovies = MoviesArray.filter(
+    (element) =>
+      element.Year == Math.min(...movies.map((property) => property.Year))
+  );
+  return filteredMovies;
+};
+console.log(FilteringMovies(movies));
 /* ESERCIZIO 11
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
