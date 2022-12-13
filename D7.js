@@ -65,7 +65,16 @@ const stringmap = stringArray.map((element) => {
 /* ESERCIZIO 9
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
-
+const makeodd = () => {
+  const oddarray = [];
+  for (let i = 0; i < 100; i++) {
+    if (i % 2 !== 0) {
+      oddarray.push(i);
+    }
+  }
+  return oddarray;
+};
+console.log(makeodd());
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [
   {
